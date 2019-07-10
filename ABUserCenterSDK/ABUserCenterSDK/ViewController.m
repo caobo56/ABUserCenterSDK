@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ABUCAPI.h"
+
 @interface ViewController ()
 
 @end
@@ -16,8 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [ABUCAPI loginWithParams:@{} completion:^(NSError * _Nonnull error, id  _Nonnull data) {
+    NSDictionary * dict = @{@"username":@"ab10002",
+                            @"password":@"abic@123",
+                            @"grant_type":@"password"
+                            };
+    [ABUCAPI loginWithParams:dict completion:^(NSError * _Nonnull error, id  _Nonnull data) {
         NSLog(@"data == %@",data);
     }];
 }

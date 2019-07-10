@@ -1,31 +1,31 @@
 //
-//  DCCNetClient.m
+//  UCNetClient.m
 //  DryCargoCamp
 //
 //  Created by caobo56 on 2019/4/10.
 //  Copyright © 2019 caobo56. All rights reserved.
 //
 
-#import "DCCNetClient.h"
+#import "UCNetClient.h"
 #import "JsonHelper.h"
 
-@implementation DCCNetClient
+@implementation UCNetClient
 
 
 +(void)getNetWorkWithUrl:(NSString*)urlStr params:(NSDictionary*)param decodeType:(NetworkDecodeType)type token:(NSString *)token completion:(NetworkCompletion)completion{
-    [DCCNetClient sendUrl:urlStr method:CBNetworkMethod_Get params:param decodeType:type token:token completion:completion];
+    [UCNetClient sendUrl:urlStr method:CBNetworkMethod_Get params:param decodeType:type token:token completion:completion];
 }
 
 +(void)postNetWorkWithUrl:(NSString*)urlStr params:(NSDictionary*)param decodeType:(NetworkDecodeType)type token:(NSString *)token completion:(NetworkCompletion)completion{
-    [DCCNetClient sendUrl:urlStr method:CBNetworkMethod_Post params:param decodeType:type token:token completion:completion];
+    [UCNetClient sendUrl:urlStr method:CBNetworkMethod_Post params:param decodeType:type token:token completion:completion];
 }
 
 +(void)deleteNetWorkWithUrl:(NSString*)urlStr params:(NSDictionary*)param decodeType:(NetworkDecodeType)type token:(NSString *)token completion:(NetworkCompletion)completion{
-    [DCCNetClient sendUrl:urlStr method:CBNetworkMethod_Delete params:param decodeType:type token:token completion:completion];
+    [UCNetClient sendUrl:urlStr method:CBNetworkMethod_Delete params:param decodeType:type token:token completion:completion];
 }
 
 +(void)putNetWorkWithUrl:(NSString*)urlStr params:(NSDictionary*)param decodeType:(NetworkDecodeType)type token:(NSString *)token completion:(NetworkCompletion)completion{
-    [DCCNetClient sendUrl:urlStr method:CBNetworkMethod_Put params:param decodeType:type token:token completion:completion];
+    [UCNetClient sendUrl:urlStr method:CBNetworkMethod_Put params:param decodeType:type token:token completion:completion];
 }
 
 +(void)sendUrl:(NSString*)urlStr method:(NSString*)method params:(NSDictionary*)param decodeType:(NetworkDecodeType)type token:(NSString *)token completion:(NetworkCompletion)completion{

@@ -1,24 +1,24 @@
 //
-//  ABUserCenterManager.m
+//  UCManager.m
 //  MUserCenter
 //
 //  Created by caobo56 on 2019/6/18.
 //  Copyright © 2019 caobo56. All rights reserved.
 //
 
-#import "ABUserCenterManager.h"
+#import "UCManager.h"
 
-@interface ABUserCenterManager()
+@interface UCManager()
 
 @end
 
-@implementation ABUserCenterManager
+@implementation UCManager
 
-static ABUserCenterManager *DefaultManager = nil;
+static UCManager *DefaultManager = nil;
 
-+ (ABUserCenterManager *)sharedManager
++ (UCManager *)sharedManager
 {
-    static ABUserCenterManager *sharedManagerInstance = nil;
+    static UCManager *sharedManagerInstance = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
         sharedManagerInstance = [[self alloc] init];
@@ -28,17 +28,17 @@ static ABUserCenterManager *DefaultManager = nil;
 
 // 防止外部调用alloc 或者 new
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
-    return [ABUserCenterManager sharedManager];
+    return [UCManager sharedManager];
 }
 
 // 防止外部调用copy
 - (id)copyWithZone:(nullable NSZone *)zone {
-    return [ABUserCenterManager sharedManager];
+    return [UCManager sharedManager];
 }
 
 // 防止外部调用mutableCopy
 - (id)mutableCopyWithZone:(nullable NSZone *)zone {
-    return [ABUserCenterManager sharedManager];
+    return [UCManager sharedManager];
 }
 
 - (instancetype)init

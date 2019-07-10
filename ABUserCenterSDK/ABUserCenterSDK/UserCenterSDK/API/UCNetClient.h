@@ -1,5 +1,5 @@
 //
-//  DCCNetClient.h
+//  UCNetClient.h
 //  DryCargoCamp
 //
 //  Created by caobo56 on 2019/4/10.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DCCNetClient : NSObject
+@interface UCNetClient : NSObject
 
 +(void)getNetWorkWithUrl:(NSString*)url params:(NSDictionary*)param decodeType:(NetworkDecodeType)type token:(NSString *)token completion:(NetworkCompletion)completion;
 

@@ -17,8 +17,8 @@
 		A869565322D30D4F008433A6 /* ABUserCenterSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A869565222D30D4F008433A6 /* ABUserCenterSDKTests.m */; };
 		A869565E22D30D4F008433A6 /* ABUserCenterSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A869565D22D30D4F008433A6 /* ABUserCenterSDKUITests.m */; };
 		A869567622D30DDC008433A6 /* ABUCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A869566D22D30DDC008433A6 /* ABUCAPI.m */; };
-		A869567722D30DDC008433A6 /* ABUserCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A869566F22D30DDC008433A6 /* ABUserCenterManager.m */; };
-		A869567822D30DDC008433A6 /* DCCNetClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A869567222D30DDC008433A6 /* DCCNetClient.m */; };
+		A869567722D30DDC008433A6 /* UCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A869566F22D30DDC008433A6 /* UCManager.m */; };
+		A869567822D30DDC008433A6 /* UCNetClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A869567222D30DDC008433A6 /* UCNetClient.m */; };
 		A869567922D30DDC008433A6 /* CBClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A869567322D30DDC008433A6 /* CBClient.m */; };
 		A869567C22D30E68008433A6 /* JsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A869567B22D30E68008433A6 /* JsonHelper.m */; };
 		A869567F22D30E8B008433A6 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = A869567E22D30E8B008433A6 /* NSString+URL.m */; };
@@ -61,11 +61,11 @@
 		A869565D22D30D4F008433A6 /* ABUserCenterSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABUserCenterSDKUITests.m; sourceTree = "<group>"; };
 		A869565F22D30D4F008433A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A869566D22D30DDC008433A6 /* ABUCAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABUCAPI.m; sourceTree = "<group>"; };
-		A869566E22D30DDC008433A6 /* ABUserCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABUserCenterManager.h; sourceTree = "<group>"; };
-		A869566F22D30DDC008433A6 /* ABUserCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABUserCenterManager.m; sourceTree = "<group>"; };
-		A869567022D30DDC008433A6 /* DCCNetClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCNetClient.h; sourceTree = "<group>"; };
+		A869566E22D30DDC008433A6 /* UCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCManager.h; sourceTree = "<group>"; };
+		A869566F22D30DDC008433A6 /* UCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCManager.m; sourceTree = "<group>"; };
+		A869567022D30DDC008433A6 /* UCNetClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCNetClient.h; sourceTree = "<group>"; };
 		A869567122D30DDC008433A6 /* CBClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBClient.h; sourceTree = "<group>"; };
-		A869567222D30DDC008433A6 /* DCCNetClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCNetClient.m; sourceTree = "<group>"; };
+		A869567222D30DDC008433A6 /* UCNetClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCNetClient.m; sourceTree = "<group>"; };
 		A869567322D30DDC008433A6 /* CBClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBClient.m; sourceTree = "<group>"; };
 		A869567422D30DDC008433A6 /* ABUCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABUCAPI.h; sourceTree = "<group>"; };
 		A869567A22D30E68008433A6 /* JsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonHelper.h; sourceTree = "<group>"; };
@@ -178,8 +178,8 @@
 		A869566B22D30D9F008433A6 /* UserCenterSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A869566E22D30DDC008433A6 /* ABUserCenterManager.h */,
-				A869566F22D30DDC008433A6 /* ABUserCenterManager.m */,
+				A869566E22D30DDC008433A6 /* UCManager.h */,
+				A869566F22D30DDC008433A6 /* UCManager.m */,
 				A869568022D31E9D008433A6 /* API */,
 			);
 			path = UserCenterSDK;
@@ -192,8 +192,8 @@
 				A869566D22D30DDC008433A6 /* ABUCAPI.m */,
 				A869567122D30DDC008433A6 /* CBClient.h */,
 				A869567322D30DDC008433A6 /* CBClient.m */,
-				A869567022D30DDC008433A6 /* DCCNetClient.h */,
-				A869567222D30DDC008433A6 /* DCCNetClient.m */,
+				A869567022D30DDC008433A6 /* UCNetClient.h */,
+				A869567222D30DDC008433A6 /* UCNetClient.m */,
 				A869567A22D30E68008433A6 /* JsonHelper.h */,
 				A869567B22D30E68008433A6 /* JsonHelper.m */,
 				A869567D22D30E8B008433A6 /* NSString+URL.h */,
@@ -362,11 +362,11 @@
 				A869567C22D30E68008433A6 /* JsonHelper.m in Sources */,
 				A869563E22D30D4E008433A6 /* ViewController.m in Sources */,
 				A869567622D30DDC008433A6 /* ABUCAPI.m in Sources */,
-				A869567722D30DDC008433A6 /* ABUserCenterManager.m in Sources */,
+				A869567722D30DDC008433A6 /* UCManager.m in Sources */,
 				A869564922D30D4F008433A6 /* main.m in Sources */,
 				A869563B22D30D4E008433A6 /* AppDelegate.m in Sources */,
 				A869567F22D30E8B008433A6 /* NSString+URL.m in Sources */,
-				A869567822D30DDC008433A6 /* DCCNetClient.m in Sources */,
+				A869567822D30DDC008433A6 /* UCNetClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -126,7 +126,8 @@ static NSMutableURLRequest * CreateRequest(NSString* url,NSString* method,NSDict
     if (token) {
         [req setValue:token forHTTPHeaderField:@"token"];
     }
-    [req setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+//    [req setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [req setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [req setValue:@"Basic dWMtbW9iaWxlOmNhb2JvMTIzNDU2" forHTTPHeaderField:@"Authorization"];
     //验证本地数据与远程数据是否相同，如果不同则下载远程数据，否则使用本地数据
     [req setCachePolicy:NSURLRequestUseProtocolCachePolicy];

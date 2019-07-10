@@ -1,5 +1,5 @@
 //
-//  ABUserCenterManager.h
+//  UCManager.h
 //  MUserCenter
 //
 //  Created by caobo56 on 2019/6/18.
@@ -50,14 +50,14 @@ typedef void(^LogoutBlk)(UserState state,NSError *err);
  */
 typedef void(^UserInfoBlk)(NSDictionary * userInfo,NSError *err);
 
-@interface ABUserCenterManager : NSObject
+@interface UCManager : NSObject
 
 /**
  用户中心单例实例化方法
 
- @return return ABUserCenterManager 用户中心全局单例
+ @return return UCManager 用户中心全局单例
  */
-+ (ABUserCenterManager *)sharedManager;
++ (UCManager *)sharedManager;
 
 /**
  登录方法
